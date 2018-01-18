@@ -34,7 +34,6 @@ header{
 
 .container {
   width: 100%;
-  
   margin: 0 auto;
   clear: both;
 }
@@ -106,7 +105,6 @@ body{
 	border-width: 1.5px;
 	transform: translateX(-10%);
 }
-
 #connect{
 	float: right;
 	width: 230px;
@@ -179,17 +177,17 @@ footer{
 
 #contact{
 	width: 580px;
-	height: 450px;
+	height: auto;
 	padding: 30px;
 	background-color: white;
 	margin-top: 40px;
-	margin-left: 150px;
-	margin-right: 40px;
-	margin-bottom: 140px;
+	margin-left: 13%;
+	margin-bottom: 40px;
 	display: inline-block;
 	border-style: solid;
 	border-color: #e6e6e6;
 	border-width: 1.5px;
+	transform: translateX(-10%);
 }
 
 .data{
@@ -220,24 +218,26 @@ footer{
 	height: 200px;
 	padding: 11px;
 	float: left;
+	margin-bottom: 5px;
 		
 }
 
 #portfolio{
 	width: 650px;
-	height: 750px;
+	height: auto;
 	padding: 25px 15px 15px 15px;
 	background-color: white;
 	margin-top: 40px;
-	margin-left: 150px;
-	margin-right: 40px;
-	margin-bottom: 40px;
+	margin-left: 13%;
+	margin-bottom: 80px;
 	display: inline-block;
 	border-style: solid;
 	border-color: #e6e6e6;
 	border-width: 1.5px;
-	margin-bottom: 150px;
+	transform: translateX(-10%);
 }
+
+
 
 /* this part is not finished
 
@@ -256,7 +256,6 @@ footer{
 @media screen and (max-width: 980px){
 	#main{
 		max-width: 260px;
-		background-color: pink;
 		margin-bottom: 100px;
 	}
 	#info{
@@ -266,17 +265,28 @@ footer{
 		margin-right: 70px;
 		margin-left: -15%;
 	}
+	#contact{
+		max-width: 260px;
+		margin-bottom: 100px;
+	}
+
+	.data, .message{
+		max-width: 260px;
+	}
+
+	#portfolio{
+		max-width: 320px;
+		height: auto;
+		margin-bottom: 100px;
+	}
+
 }
 @media screen and (max-width: 768px){
 	#main{
 		max-width: 680px;
-		background-color: green;
 		margin-bottom: 10px;
 	}
-	#connect{
-		margin-right:5px;
-		margin-left: -25%;
-	}
+
 	#info{
 		margin-right: 0%;
 		margin-left: 0%;
@@ -286,14 +296,41 @@ footer{
 	}
 	#connect{
 		float: left;
-		width: 100%;
-		max-width: 570px;
-		margin-left: 30px;
-		align-content: center;
+		width: 80%;
+		margin-left: 93px;
+		margin-right: 100px;
+		align-content: left;
+		transform: translateX(-12%);
+		margin-left: 15%;
 	}
 	#about-me{
 		text-align: left;
 		align-content: left;
+	}
+	#contact{
+		max-width: 680px;
+		margin-bottom: 10px;
+		margin-right: 15%;
+		width: 78%;
+	}
+
+	.data, .message{
+		max-width: 680px;
+		margin-right: 15%;
+		width: 100%;
+	}
+	#connect-with-me{
+		text-align: left;
+	}
+	#portfolio{
+		max-width: 550px;
+		height: auto;
+		margin-bottom: 0px;
+	}
+	.pimages{
+		width: 250px;
+		height: 160px;
+		padding: 11px;
 	}
 }
 @media screen and (max-width: 640px){
@@ -302,18 +339,39 @@ footer{
 		text-align: center;
 		width: 100%;
 	}
-#name{
-	padding:30px 5px 20px 20px; 
-	height: 45px;
-	width: 100%;
-	background-color: #4aaaa5;
-	color: white;
-	text-align: center
+	#name{
+		padding:30px 5px 20px 20px; 
+		height: 45px;
+		width: 100%;
+		background-color: #4aaaa5;
+		color: white;
+		text-align: center
+		}
+	#info{
+		transform: translateX(-10%);
+		max-width: 100%;
+		margin-right: 25%;
+		margin-left: 25%;
+		}
+	#my-picture{
+		width: 440px;
+		height: auto;
 	}
-#info{
-	transform: translateX(-10%);
-	max-width: 100%;
-	margin-right: 25%;
-	margin-left: 25%;
+
+	#connect-with-me{
+		text-align: left;
 	}
+
+	#portfolio{
+		max-width: 480px;
+		margin-bottom: 0px;
+	}
+
+	.pimages{
+		width: 450px;
+		height: 300px;
+		padding: 11px;
+			
+}
+
 }
